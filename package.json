@@ -1,0 +1,19 @@
+{
+  "name": "azularc-backend",
+  "version": "1.0.0",
+  "description": "\"# azularc-backend\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishalmanes109/azularc-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vishalmanes109/azularc-backend/issues"
+  },
+  "homepage": "https://github.com/vishalmanes109/azularc-backend#readme"
+}
