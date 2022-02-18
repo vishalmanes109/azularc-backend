@@ -10,7 +10,10 @@ const {
   getUserById,
 } = require("./user.controller");
 
-router.get("/userid/:userid", getUserById);
+router.get("/email/:userid", getUserByEmail);
+router.get("/name/:name", getUserByName);
+router.get("/address/:address", getUserByAddress);
+
 router.post("/", createUser);
 router.get("/all", getUsers);
 router.delete("/:id", deleteUser);  

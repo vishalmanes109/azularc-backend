@@ -27,9 +27,9 @@ module.exports = {
 
     userData.name = DataCleaning(userData.name);
 
-    userData.name = DataCleaning(userData.email);
+    userData.email = DataCleaning(userData.email);
 
-    userData.name = DataCleaning(userData.address);
+    userData.address = DataCleaning(userData.address);
     if (
       !isValidString(userData.name) ||
       !isValidString(userData.email) ||

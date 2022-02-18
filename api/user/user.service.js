@@ -5,9 +5,8 @@ module.exports = {
   createUser: async (userData) => {
     try {
       let result = await pool.query(
-        `insert into Employee(id, name,age,email,dob,address,photo) values($1,$2,$3,$4,$5,$6,$7)`,
+        `insert into Employee( name,age,email,dob,address,photo) values($1,$2,$3,$4,$5,$6)`,
         [
-          userData.id,
           userData.name,
           userData.age,
           userData.email,
@@ -95,5 +94,36 @@ module.exports = {
     } catch (err) {
       return err;
     }
-  }
+  },
+  // getUserByName: async (userId) => {
+  //   try {
+  //     let result = await pool.query(`select * from Employee where id=$1 and name=$2`, [
+  //       userId,
+  //       name
+  //     ]);
+  //     return result;
+  //   } catch (err) {
+  //     return err;
+  //   }
+  // },
+  // getUserByEmail: async (userId) => {
+  //   try {
+  //     let result = await pool.query(`select * from Employee where id=$1`, [
+  //       userId,
+  //     ]);
+  //     return result;
+  //   } catch (err) {
+  //     return err;
+  //   }
+  // },
+  // getUserByAddress: async (userId) => {
+  //   try {
+  //     let result = await pool.query(`select * from Employee where id=$1`, [
+  //       userId,
+  //     ]);
+  //     return result;
+  //   } catch (err) {
+  //     return err;
+  //   }
+  // }
 };
